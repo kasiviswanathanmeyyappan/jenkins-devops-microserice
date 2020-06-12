@@ -1,4 +1,4 @@
- pippline{
+ pipline{
  
     agent any
 

@@ -20,6 +20,15 @@
 				echo "Build"
 			  }
 	}
+
+	stage('Compile'){
+
+		steps{
+
+			sh "mvn clear compile"
+		}
+	}
+
 	
    }
  

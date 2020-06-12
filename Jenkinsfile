@@ -26,7 +26,8 @@
 
 		steps{
 
-			sh 'mvn --version'
+			
+			sh label: 'mvn --version', script: 'mvn --version'
 		}
 	}
 

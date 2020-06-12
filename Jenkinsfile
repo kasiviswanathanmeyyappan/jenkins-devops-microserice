@@ -8,7 +8,7 @@
 
 		//dockerHome = tool 'myDocker'
 		mavenHome= tool 'mymaven'
-		PATH = "$mavenHome/bin:$PATH"
+		//PATH = "$mavenHome/bin:$PATH"
 	}
 	stages {
 

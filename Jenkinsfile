@@ -13,17 +13,12 @@
 			  }
 	}
 
-
 	stage('Build Docker Image'){
 
-
-         script{
-
-			 steps{
-
-			 "docker build -t 569736/currency-exchange-devops:$env.BUILD_TAG"
-
-		    } 
+	steps{
+        
+		 "docker build -t 569736/currency-exchange-devops:$env.BUILD_TAG"
+		
 		 }
  	 
       }

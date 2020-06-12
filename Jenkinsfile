@@ -4,12 +4,13 @@
 
 	//agent { docker {image 'maven:3.6.3'} }
 
-    environment {
+    // environment {
 
-		//dockerHome = tool 'myDocker'
-		mavenHome = tool 'myMaven'
-		PATH = "$mavenHome/bin:$PATH"
-	}
+	// 	//dockerHome = tool 'myDocker'
+	// 	mavenHome = tool 'myMaven'
+	// 	PATH = "$mavenHome/bin:$PATH"
+	// }
+
 	stages {
 
 	stage('Build'){
@@ -20,7 +21,7 @@
 		// sh 'docker version'
 
 		echo "Build"
-		echo "PATH - $PATH"
+		//echo "PATH - $PATH"
 	  }
 	}
 	stage('Test') {

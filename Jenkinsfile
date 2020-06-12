@@ -6,9 +6,9 @@
 
     environment {
 
-		//dockerHome = tool 'myDocker'
+		dockerHome = tool 'myDocker'
 		mavenHome = tool 'myMaven'
-		PATH = "$mavenHome/bin:$PATH"
+		PATH = "$dockerHome/bin:$mavenHome/bin:$PATH"
 	}
 
 	stages {
@@ -17,8 +17,6 @@
 	 
 	   steps {	           
 		     
-			  sh 'mvn --version'
-
 				echo "Build"
 			  }
 	}

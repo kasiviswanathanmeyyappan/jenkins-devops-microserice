@@ -15,31 +15,11 @@
 
 	stage('Build'){
 	 
-	   steps {		 
-        
-		 sh 'mvn --version'
-		// sh 'docker version'
-
-		echo "Build"
-		//echo "PATH - $PATH"
-	  }
+	   steps {	         
+				echo "Build"
+			  }
 	}
-	stage('Test') {
-
-		steps{
-		echo "Test"
-	  }
-	}
-
-	stage('IntegrationTest'){
-
-		steps{
-
-		echo "IntegrationTest"
-		}
 	
-	}
-
    }
  
  }

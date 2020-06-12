@@ -14,7 +14,7 @@
 	}
 
 
-	stag('Build Docker Image'){
+	stage('Build Docker Image'){
 
 
          script{

@@ -8,8 +8,6 @@
 		mavenHome = tool 'myMaven'
 		PATH= "$mavenHome/bin:$PATH"
 	}
-
-
 	
 
 	stages {
@@ -20,17 +18,9 @@
 		     
 				echo "Build"
 			  }
-	}
+	    }
 
-	stage('Version'){
-
-		steps{
-
-			
-			sh label: 'mvn --version', script: 'mvn --version'
-		}
 	}
 
    }
  
- }
